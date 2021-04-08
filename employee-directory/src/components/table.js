@@ -28,6 +28,7 @@ class companyemployeeTable extends Component {
   }
   catalog = () => {
     var searchResults ;
+        // eslint-disable-next-line eqeqeq
         if (this.state.sorted == false){
         searchResults = this.state.results.sort(function (a,b) {
             if (a.name.last > b.name.last) {
