@@ -1,6 +1,7 @@
 import React from "react";
+import "../src/style/title-style.css ";
 
-function directoryHeader (){
+function DirectoryHeader (){
 return (
 <div className="container">
       <div className="jumbotron">
@@ -10,4 +11,4 @@ return (
    </div>     
 );
 }
-export default directoryHeader;
+export default DirectoryHeader;
