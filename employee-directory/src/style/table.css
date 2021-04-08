@@ -1,0 +1,12 @@
+.container {
+    background-image: url"../images/main_background_image.png"
+}
+table {
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.row {
+    background-color: rgb(87, 85, 85);
+}
