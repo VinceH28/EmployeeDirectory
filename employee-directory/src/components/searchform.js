@@ -12,7 +12,7 @@ function Query(props) {
       type="text"
       className="form-control"
       placeholder=""
-      aria-label="Example text with button addon"
+      aria-label=" area for potential user input"
       aria-describedby="button-addon1"
       onChange={props.filter}
     />

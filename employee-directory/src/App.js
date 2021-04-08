@@ -1,12 +1,14 @@
 import React from "react";
-import DirectoryHeader from "./components/title.js";
-import Api from "../src/utils/API";
+import "./App.css";
+import DirectoryHeader from "./components/title";
+import Table from "./components/table";
+
 
 function App() {
   return (
     <div>
-    <DirectoryHeader/>
-      <Api/>
+      < DirectoryHeader  />
+      < Table />
     </div>
   );
 }

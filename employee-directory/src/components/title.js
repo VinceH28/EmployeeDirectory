@@ -1,10 +1,10 @@
 import React from "react";
-import "../src/style/title-style.css ";
+import "../style/title.css";
 
 function DirectoryHeader (){
 return (
-<div className="container">
-      <div className="jumbotron">
+<div className style={{ backgroundImage: `url(require("../images/header_background_image.png"))`}}>
+      <div className="jumbotron" >
         <h1> Company Directory </h1>
         <p> Welcome to your company employee directory! </p>
    </div>

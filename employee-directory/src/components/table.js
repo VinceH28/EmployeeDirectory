@@ -1,7 +1,7 @@
 import React,  { Component } from "react";
-import "..src//style/table-style.css ";
 import API from "../utils/API";
-import Query from "./searchform";
+import Query from "../components/searchform";
+import "../style/table.css";
 
 class companyemployeeTable extends Component {
   state = {
@@ -17,7 +17,7 @@ class companyemployeeTable extends Component {
       .then(
           (apiresults) => {
               this.setState({
-                  apiresults: apiresults.data.results
+                  results: apiresults.data.results
               });
           },
           (error) => {
@@ -29,9 +29,9 @@ class companyemployeeTable extends Component {
   }
   catalog = () => {
     var searchResults ;
-        // eslint-disable-next-line eqeqeq
         if (this.state.sorted == false){
-        searchResults = this.state.results.sort(function (a,b) {
+        searchResults = this.state.results.sort
+        (function (a,b) {
             if (a.name.last > b.name.last) {
                 return -1;
             }
@@ -67,7 +67,7 @@ filter = (e) => {
       })
 }
 
-render (){
+render () {
     return (
         <div classname="container">
             <Query filter={this.filter} />
