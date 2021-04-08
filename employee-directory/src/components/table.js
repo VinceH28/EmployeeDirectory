@@ -1,6 +1,7 @@
 import React,  { Component } from "react";
+import "..src//style/table-style.css ";
 import API from "../utils/API";
-import Query from "./searchform"
+import Query from "./searchform";
 
 class companyemployeeTable extends Component {
   state = {
@@ -12,7 +13,7 @@ class companyemployeeTable extends Component {
   };
 
   componentDidMount() {
-      API.getEmployeeData()
+      API.employeeData()
       .then(
           (apiresults) => {
               this.setState({
