@@ -1,0 +1,18 @@
+h1 {
+    /* width: 100%; */
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: underline;
+    color: #003572;
+    margin-bottom: 50px;
+  }
+
+p {
+  text-align: center;
+  font-size: x-large;
+}
+
+.container {
+  background-image: src=".../publi/images/header_background_image.png" ;
+
+}
