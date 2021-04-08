@@ -5,7 +5,7 @@ return (
 <div className="container">
       <div className="jumbotron">
         <h1> Company Directory </h1>
-        <p>Welcome to your company employee directory</p>
+        <p> Welcome to your company employee directory! </p>
    </div>
    </div>     
 );
