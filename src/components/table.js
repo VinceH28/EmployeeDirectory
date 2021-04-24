@@ -55,16 +55,11 @@ class companyemployeeTable extends Component {
 
 filter = (e) => {
     var userInput = e.target.value;
-    const sortedResults = this.state.results.filter
-    ( employee =>
-      employee.name.first.includes(userInput)  ||
-      employee.name.last.includes(userInput) ||
-      employee.location.country.includes(sortedResults)
-      )
-      this.setState({
-          query: sortedResults,
-          sorted: sortedResults,
-      })
+    let sortedResults = this.state.results.filter(employee => employee.name.first.includes(userInput)  || employee.name.last.includes(userInput) || employee.location.country.includes(userInput))
+    this.setState({
+        query: userInput,
+        filter: sortedResults,
+    })
 }
 
 render () {
